@@ -1,0 +1,57 @@
+# React
+
+## Background
+- React is a Javascript library that is used for building fast user interfaces
+- Developed at Facebook in 2011
+- Built from independent components
+- Every React application is a tree of components
+- Each component will usually be a Javascript class that has a 'state' object and a 'render()' method
+    - Output of the 'render()' method will be a React element, which is a Javascript object that maps to a real DOM element, and represents that DOM element in memory
+    - React elements are referred to as the 'Virtual DOM'
+    - Whenever the state of of a component changes, a new React element is created. This new React element is compared to the previous React element stored in memory so that React can figure out what in the virtual DOM has changed. The real DOM in the browser is then updated with the new virtual DOM.
+- React 'reacts' to state changes, and updates the DOM automatically.
+
+## Installation
+
+1. Install npm
+    `curl -L https://www.npmjs.com/install.sh | sh`
+    - Check you have the correct version here [npm](https://www.npmjs.com/package/npm)
+1. Install Node JS
+    ```
+    curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.2/install.sh | bash
+    nvm install xxxxxx
+    ```
+    - Check you have the correct version here [Node JS](https://nodejs.org/en/)
+
+## Tutorial
+
+1. `npm i -g create-react-app`
+1. `create-react-app <project name>`
+        - projects created this way enables 'hot module reloading'
+    - had to run a `sudo chown -R 1000:1000` command to get this to work
+1. `cd <project name>`
+1. `npm i bootstrap`
+1. `npm start` - will launch development server on port 3000
+
+## Notes 
+
+- 'node_modules' dir contains all 3rd party libraries (never modify anything in this dir)
+- 'public' - contains public assets of the application
+    - contains index.html that contains the div that contains the entire React application
+- 'src' - contains all component code for React application
+- 'Component' class is built into React
+- React works on JSX (Javascript XML), neither string nor HTML, describes what the UI will look like
+    - For JSX to work, has to be passed to Babel, a modern Javascript compiler. Babel can take JSX ass input, and output Javascript code that can be run in the browser.
+    - Eg. at https://babeljs.io/repl (online Javascript compiler),
+    `const element = <h1>Hello World</h1>;`
+    is compiled by Babel to:
+    ```
+    "use strict";
+    var element = React.createElement("h1", null, "Hello World");
+    ```
+    - Notice that the object 'React' is in the compiled output. This is why 'React' must be imported into the project in index.js.
+- 'index.js' - entry point for the application
+
+## References
+
+- React Tutorial https://www.youtube.com/watch?v=Ke90Tje7VS0
