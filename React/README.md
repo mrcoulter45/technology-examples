@@ -36,7 +36,7 @@
 ## Debugging 
 [React Developer Tools](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en)
 Right click > Inspect > Components
-- Allows you to see: 
+- Allows you to inspect: 
     - all components
     - all state of each component
     - elements of each component
@@ -64,7 +64,7 @@ Right click > Inspect > Components
     - Notice that the object 'React' is in the compiled output. This is why 'React' must be imported into the project in index.js.
 - 'index.js' - entry point for the application
 - JSX stands for JavaScript XML
-- JSX expressions are just like normal Javascript objects
+- JSX expressions are normal Javascript objects
 - JSX expressions in the React code are compiled into React elements, which are just Javascript objects. Hence, 'className' is used intead of 'class', because 'class' is a reserved keyword in Javascript.
 - Every React element must have a unique 'key'. This is how React is able to keep track of all of the elements in the virtual DOM so that it can be kept in sync with the DOM. This ID of each element is denoted by the element's 'key' attribute in JSX. Keys must be unique only in their respective scope, Eg. if a component has multiple lists of elements being rendered, element keys must only be unique in their respective lists, not across the entire component.
 - In event handlers in React, 'this' is undefined. This is because React runs in 'strict' mode via the line `"use strict";` that is created upon compiling the JSX into Javascript code, where 'this' is undefined. In non-strict mode, 'this' would refer to the Window object by default. So, because of this, the event handler does not know that 'this' is referring to the component object. So, the Javascript 'bind' method is needed. The bind() method creates a new function that, when called, has its 'this' keyword set to the provided value, with a given sequence of arguments preceding any provided when the new function is called. Therefore, in the component's constructor where 'this' is referring to the component object, a line such as `this.handleIncrement = this.handleIncrement.bind(this);` may be used to solve the problem, `handleIncrement` being the handler function that is called when, say, a button is pressed via `onClick`.
@@ -75,7 +75,7 @@ Right click > Inspect > Components
 // parent component
 <Counter key={counter.id} value={counter.value} onDelete={this.handleDelete} />
 ```
-Here, onDelete is a reference to a function in the parent component. This allows you to call a parent component function from a child component.
+Here, 'onDelete' is a reference to a function in the parent component. This allows you to call a parent component function from a child component.
 - Children props can be passed like so:
 ```
 // parent component
@@ -94,4 +94,4 @@ render() {
 
 ## References
 
-- React Tutorial https://www.youtube.com/watch?v=Ke90Tje7VS0
+- [Programming with Mosh - "React Tutorial - Learn React - React Crash Course [2019]"](https://www.youtube.com/watch?v=Ke90Tje7VS0)
