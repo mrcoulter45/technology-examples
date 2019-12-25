@@ -21,3 +21,25 @@ console.log(obj1);
 // > Object { a: "cat", b: Object { a: "cat", b: Object { a: "cat", b: "doggy", c: "fish" }, c: "fish" }, c: "fish" }
 // > Object { a: "zebra", b: Object { a: "cat", b: Object { a: "cat", b: "doggy", c: "fish" }, c: "fish" }, c: "fish" }
 // Spread operator cannot be used for true object deep copy
+
+// Promises
+var promise0 = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    resolve('promise0 resolves');
+  }, 3000);
+})
+.then((value) => { console.log('.then() runs 3 seconds later...', value) })
+.catch((value) => { console.log('.catch() runs 3 seconds later...', value) });
+
+var promise1 = new Promise((resolve, reject) => {
+  setTimeout(() => {
+    reject('promise1 rejects');
+  }, 3000);
+})
+.then((value) => { console.log('.then() runs 3 seconds later...', value) })
+.catch((value) => { console.log('.catch() runs 3 seconds later...', value) });
+
+// > .then() runs 3 seconds later... promise0 resolves
+// > .catch() runs 3 seconds later... promise1 rejects
+
+// async and await
