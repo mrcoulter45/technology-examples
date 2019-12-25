@@ -17,11 +17,11 @@ const promise0 = new Promise((resolve, reject) => {
 });
 ```
 When a Promise object is first created, it is created in the `pending` state, and given a value of `undefined`. 
-[![N|Solid](https://github.com/mrcoulter45/technology-examples/blob/master/JavaScript/images/promise0.png)
+![N|Solid](https://github.com/mrcoulter45/technology-examples/blob/master/JavaScript/images/promise0.png)
 If the Promise object is `resolved`, it can no longer be `rejected`, its `.then()` method runs, and its value is set to the resolved value.
-[![N|Solid](https://github.com/mrcoulter45/technology-examples/blob/master/JavaScript/images/promise1.png)
+![N|Solid](https://github.com/mrcoulter45/technology-examples/blob/master/JavaScript/images/promise1.png)
 Similarly, if the Promise object is `rejected`, it can no longer be `resolved`, its `.catch()` method runs, and its value is set to the rejected error.
-[![N|Solid](https://github.com/mrcoulter45/technology-examples/blob/master/JavaScript/images/promise2.png)
+![N|Solid](https://github.com/mrcoulter45/technology-examples/blob/master/JavaScript/images/promise2.png)
 Eg.
 ```JavaScript
 var promise0 = new Promise((resolve, reject) => {
