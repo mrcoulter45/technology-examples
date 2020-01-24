@@ -1,6 +1,7 @@
 # Rust
 
 ## Background
+Rust is a multi-paradigm system programming language focused on safety, especially safe concurrency. Rust is syntactically similar to C++, but is designed to provide better memory safety while maintaining high performance.
 
 ## Installation
 
@@ -20,4 +21,4 @@ To install Rust (Linux or macOS):
 
 ## References
 
-- [Rust Programming Tutorials by dcode](https://www.youtube.com/playlist?list=PLVvjrrRCBy2JSHf9tGxGKJ-bYAN_uDCUL)
+1. [Rust Programming Tutorials by dcode](https://www.youtube.com/playlist?list=PLVvjrrRCBy2JSHf9tGxGKJ-bYAN_uDCUL)
