@@ -14,12 +14,16 @@
 ## Installation
 
 1. Install npm
-    `curl -L https://www.npmjs.com/install.sh | sh`
+    ```
+    npm install npm@latest -g
+    npm -v
+    ```
     - Check you have the correct version here [npm](https://www.npmjs.com/package/npm)
 1. Install Node JS
     ```
-    curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.2/install.sh | bash
-    nvm install xxxxxx
+    curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
+    sudo apt install nodejs
+    nodejs -v
     ```
     - Check you have the correct version here [Node JS](https://nodejs.org/en/)
 
@@ -33,26 +37,26 @@
 1. `npm i bootstrap`
 1. `npm start` - will launch development server on port 3000
 
-## Debugging 
+## Debugging
 [React Developer Tools](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en)
 Right click > Inspect > Components
-- Allows you to inspect: 
+- Allows you to inspect:
     - all components
     - all state of each component
     - elements of each component
     - inspect corresponding DOM element of each component
     - log component data to console
     - view original jsx source code of components and set breakpoints there
-    - typing `$r` in the console lets you view the state of component instances in the DOM. Similarly, in the 'Elements' tab, typing `$0` lets you view state of different elements in the DOM. 
+    - typing `$r` in the console lets you view the state of component instances in the DOM. Similarly, in the 'Elements' tab, typing `$0` lets you view state of different elements in the DOM.
 
-## React Rules 
+## React Rules
 - React rule of thumb: 'The component that owns a piece of the state should be the one modifying it.'
 - Do not modify component state directly. State must be modified with the `this.setState` method.
 
 ## Vocab
 - JSX: JavaScript XML
 - Component State: Data that is local or private to the component, it cannot be accessed outside of the component.
-- Component Props: A plain JavaScript object that includes all of the attributes that are set and passed to the component by the parent component (component input). Props are also READ ONLY. Includes 'value' and 'onDelete' in the example: 
+- Component Props: A plain JavaScript object that includes all of the attributes that are set and passed to the component by the parent component (component input). Props are also READ ONLY. Includes 'value' and 'onDelete' in the example:
 ```
 // parent component
 <Counter key={counter.id} value={counter.value} onDelete={this.handleDelete} />
@@ -72,7 +76,7 @@ render() {
             {this.props.children}
             ...
 ```
-- Controlled Component: Does not have its own local state, receives all data via props and raises events whenever data needs to be changed. These components are entirely controlled by the parent. 
+- Controlled Component: Does not have its own local state, receives all data via props and raises events whenever data needs to be changed. These components are entirely controlled by the parent.
 - Stateless Functional Component: If a component only has the render method and does not contain any event handlers, helper methods, or state, and only uses props for data passing, a 'stateless functional component' may be used. Lifecycle hooks may not be used in these components.
 Eg.
 ```
@@ -84,7 +88,7 @@ const NavBar = (props) => {
   );
 };
 
-export default NavBar; 
+export default NavBar;
 ```
 
 ## Special Functions
@@ -92,7 +96,7 @@ export default NavBar;
 - Component Lifecycle Phases (only for class components):
 1. Mount - when an instance of a component is created and inserted into the DOM
     Lifecycle Hooks (Methods):
-    1. constructor 
+    1. constructor
         - called only once when an instance of a class is created
         - good place to set initial state (possibly from external props)
             - `this.state` will be set directly, `this.setState()` is not used in the constructor
@@ -116,7 +120,7 @@ export default NavBar;
         - called just before a component is removed from the DOM
         - good opportunity to do any sort of cleanup that needs to be done before the component is removed from the DOM to prevent memory leaks
 
-## Notes 
+## Notes
 - 'node_modules' dir contains all 3rd party libraries (never modify anything in this dir, as any changes made to files in this directory will be overwritten on the next npm install or update)
 - 'public' - contains public assets of the application
     - contains index.html that contains the div that contains the entire React application
