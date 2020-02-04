@@ -1,7 +1,5 @@
 # Technology Examples
 
-## Table of Contetnts
+This repository is a collection of examples and tutorials for many different technolgies. The idea is, for any technology listed in this repository, one may be able to learn the basics, as well as experience the technology in depth, and actually understand how it can be useful and applied in the world.
 
-1. [JavaScript](https://github.com/mrcoulter45/technology-examples/tree/master/JavaScript)
-1. [React](https://github.com/mrcoulter45/technology-examples/tree/master/React)
-1. [Rust](https://github.com/mrcoulter45/technology-examples/tree/master/Rust)
+*"To master a new technology, you have to play with it."* - Jordan Peterson
