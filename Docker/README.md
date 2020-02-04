@@ -124,3 +124,8 @@ sudo docker push mrcoulter45/vivado-ci
 
 To exit container while in interactive mode:
 `exit`
+
+## Notes
+1. (Windows) To disable Hyper-V to allow VirtualBox to work, run in cmd prompt in administrator mode:
+`dism.exe /Online /Disable-Feature:Microsoft-Hyper-V`
+Will break Docker Desktop. Docker will ask on startup if you would like to enable Hyper-V features to allow Docker to run properly (VirtualBox will no longer work)
