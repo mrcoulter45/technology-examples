@@ -13,12 +13,6 @@
 
 ## Installation
 
-1. Install npm
-    ```
-    npm install npm@latest -g
-    npm -v
-    ```
-    - Check you have the correct version here [npm](https://www.npmjs.com/package/npm)
 1. Install Node JS
     ```
     curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
@@ -26,6 +20,12 @@
     nodejs -v
     ```
     - Check you have the correct version here [Node JS](https://nodejs.org/en/)
+1. Install npm
+    ```
+    npm install npm@latest -g
+    npm -v
+    ```
+    - Check you have the correct version here [npm](https://www.npmjs.com/package/npm)
 
 ## Tutorial
 
