@@ -61,6 +61,10 @@ For more examples and ideas, visit:
 
 ## Commands
 
+Create Docker image from Dockerfile:
+`docker build -t <image_name> <dockerfile_path>`
+Eg. `docker build -t nginx_image .`
+
 List all running/ran containers:
 `sudo docker ps -a`
 
@@ -73,8 +77,12 @@ Remove one or more containers:
 Remove one or more images:
 `docker rmi <IMAGE ID> ...`
 
-Run vivado image in a container:
-`sudo docker run -it --name <container_name> <image_name>`
+Run an image in a container:
+`sudo docker run -it --name <container_name> <image_name>` // adding `--rm` will remove the container when it exits
+
+Restart exited container:
+`sudo docker start -ai <container_name>`
+Programs and files inside of the stopped container will persist after restarting the container
 
 Docker folder location:
 `/var/lib/docker`
@@ -108,10 +116,6 @@ If the container is already stopped and you still want to access the files from 
 This will copy `/foo` from your container into `/tmp/foo` from your host (must be path from root `/`, not home `\~`)
 Eg.
 `sudo docker cp gallant_leakey:/home/vivado/ci-test-shield-fpga files`
-
-Restart exited container:
-`sudo docker start -ai <container_name>`
-Programs and files inside of the stopped container will persist after restarting the container
 
 To create new image based off of already existing container:
 `sudo docker commit <container_id> mrcoulter45/vivado-ci`
