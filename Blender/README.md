@@ -2,15 +2,15 @@
 ###### *2.82a*
 
 ## Settings for 3D Printing
-Scene tab in properties panel (cone and circle) > units
-  Unit system: metric
-  Unit scale: 0.001
-  Length: mm
-Overlays in viewport
-  Grid scale: 0.001
-View tab (n)
-  Clip start: 0.01mm
-  End: 10000mm
+- Scene tab in properties panel (cone and circle) > units
+  - Unit system: metric
+  - Unit scale: 0.001
+  - Length: mm
+- Overlays in viewport
+  - Grid scale: 0.001
+- View tab (n)
+  - Clip start: 0.01mm
+  - End: 10000mm
 
 ## Operation
 - orbit movement: `middle mouse button, cartesian gizmo in top right`
@@ -54,6 +54,7 @@ View tab (n)
 - duplicate selection: `shift + d`
 
 ## Modeling
+### Commands
 - edit mode: `tab`
 - proportional editing: `o`
 - to smooth the surface of curved objects:
@@ -113,6 +114,7 @@ View tab (n)
 - delete edge on a face: `select edge > x > dissolve edges` or `delete edge` - can change on whether the edge was created by a loop cut or not
 - merge/combine vertices to eliminate triangle/big vertex joints, `select vertices > alt + m > at last/first` or `snapping > vertex > press ctrl while grabbing vertex to snap to nearest vertex` (will not work if proportional editing is on)
 - auto merge verticies if verticies are in the same location
+
 ![](./images/2.JPG)
 - align selected vertices on axis: `select all vertices > s > xyz > 0` - usually needed after a bevel
 - shade smooth force ignore edges: `shade smooth > object data properties (green triangle) > normals > auto smooth` - will not try to smooth edges that include an angle that exceeds the magnitude of the 'Angle' setting
@@ -154,4 +156,5 @@ View tab (n)
 - Modifiers can be enabled/disabled in different modes from the modifyer menu.
 
 ## [Tutorial](https://www.youtube.com/playlist?list=PLjEaoINr3zgEq0u2MzVgAaHEBt--xLB6U)
-Amazing Blender tutorial by [*Blender Guru*](https://www.youtube.com/channel/UCOKHwx1VCdgnxwbjyb9Iu1g) can be found [here](https://www.youtube.com/playlist?list=PLjEaoINr3zgEq0u2MzVgAaHEBt--xLB6U).
+Amazing beginner Blender tutorial by [*Blender Guru*](https://www.youtube.com/channel/UCOKHwx1VCdgnxwbjyb9Iu1g) can be found [here](https://www.youtube.com/playlist?list=PLjEaoINr3zgEq0u2MzVgAaHEBt--xLB6U).
+Blender modeling tutorial by [*Blender Guru*](https://www.youtube.com/channel/UCOKHwx1VCdgnxwbjyb9Iu1g) can be found [here](https://www.youtube.com/watch?v=Hf2esGA7vCc&list=PLjEaoINr3zgEL9UjPTLWQhLFAK7wVaRMR).
