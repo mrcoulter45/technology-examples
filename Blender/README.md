@@ -21,14 +21,14 @@
 - to move camera: `position view > F3 > Align Camera to View` or `n > Lock Camera to View`
 - view menu: \`
   includes:
-  1. view camera
-  1. focus selected object
-  1. right
-  1. left
-  1. front
-  1. back
-  1. top
-  1. bottom
+  - view camera
+  - focus selected object
+  - right
+  - left
+  - front
+  - back
+  - top
+  - bottom
 - turn off grid lines, camera, light, other extras: `"Show Overlays" in top right`
 - toggle gizmos: `"Show Gizmo" in top right`
 - selection tool types: `w`
@@ -157,4 +157,5 @@
 
 ## [Tutorial](https://www.youtube.com/playlist?list=PLjEaoINr3zgEq0u2MzVgAaHEBt--xLB6U)
 Amazing beginner Blender tutorial by [*Blender Guru*](https://www.youtube.com/channel/UCOKHwx1VCdgnxwbjyb9Iu1g) can be found [here](https://www.youtube.com/playlist?list=PLjEaoINr3zgEq0u2MzVgAaHEBt--xLB6U).
+
 Blender modeling tutorial by [*Blender Guru*](https://www.youtube.com/channel/UCOKHwx1VCdgnxwbjyb9Iu1g) can be found [here](https://www.youtube.com/watch?v=Hf2esGA7vCc&list=PLjEaoINr3zgEL9UjPTLWQhLFAK7wVaRMR).
