@@ -25,6 +25,9 @@ Amazon Elastic Compute Cloud (EC2) forms a central part of Amazon.com's cloud-co
 
 In November 2010, Amazon switched its own retail website to use EC2 and AWS.
 
+### [Amazon ECR](https://aws.amazon.com/ecr/)
+Amazon Elastic Container Registry (ECR) is a fully-managed Docker container registry that makes it easy for developers to store, manage, and deploy Docker container images. Amazon ECR is integrated with Amazon Elastic Container Service (ECS), simplifying your development to production workflow. Amazon ECR eliminates the need to operate your own container repositories or worry about scaling the underlying infrastructure. Amazon ECR hosts your images in a highly available and scalable architecture, allowing you to reliably deploy containers for your applications. Integration with AWS Identity and Access Management (IAM) provides resource-level control of each repository. With Amazon ECR, there are no upfront fees or commitments. You pay only for the amount of data you store in your repositories and data transferred to the Internet.
+
 ### [Amazon S3](https://aws.amazon.com/s3/)
 Amazon S3 or Amazon Simple Storage Service is a service offered by Amazon Web Services (AWS) that provides object storage through a web service interface. Amazon S3 uses the same scalable storage infrastructure that Amazon.com uses to run its global e-commerce network. Amazon S3 can be employed to store any type of object which allows for uses like storage for Internet applications, backup and recovery, disaster recovery, data archives, data lakes for analytics, and hybrid cloud storage. In its service-level agreement, Amazon S3 guarantees 99.9% uptime, which works out to less than 43 minutes of downtime per month.[4] AWS launched Amazon S3 in the United States on March 14, 2006, then in Europe in November 2007.
 
