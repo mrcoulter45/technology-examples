@@ -114,8 +114,7 @@
   - manually flip face: `ctrl + shift + n`
 - delete edge on a face: `select edge > x > dissolve edges` or `delete edge` - can change on whether the edge was created by a loop cut or not
 - merge/combine vertices to eliminate triangle/big vertex joints, `select vertices > alt + m > at last/first` or `snapping > vertex > press ctrl while grabbing vertex to snap to nearest vertex` (will not work if proportional editing is on)
-- auto merge verticies if verticies are in the same location
-
+- auto merge verticies if verticies are in the same location<br/>
 ![](./images/2.JPG)
 - align selected vertices on axis: `select all vertices > s > xyz > 0` - usually needed after a bevel
 - shade smooth force ignore edges: `shade smooth > object data properties (green triangle) > normals > auto smooth` - will not try to smooth edges that include an angle that exceeds the magnitude of the 'Angle' setting
@@ -140,7 +139,7 @@
   - make edges sharper by adding loop cuts and dragging them very close to the edges in question
   - to fix rounded edges going around a corner, select edges except 2 edge vertices and `gg` to edge drag and merge
     - in essence, you want only 2 flows of rectangles instead of 3<br/>
-    ![](./images/0.JPG)
+    ![](./images/0.JPG)<br/>
     ![](./images/1.JPG)
 
 #### Solidify Modifier
