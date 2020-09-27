@@ -15,6 +15,7 @@
 ## Operation
 - orbit movement: `middle mouse button, cartesian gizmo in top right`
 - zoom: `wheel, plus magnifying glass gizmo in top right`
+  - To fix zooming issue: `Edit > Preferences > Navigation > check "Auto Depth"`
 - pan left/right/up/down: `shift + middle mouse button, hand gizmo in top right`
 - look at view from perfect axis viewpoint: `click one of the axis in the cartesian gizmo`
 - look at view from camera viewpoint: `camera gizmo in top right`
@@ -38,7 +39,7 @@
 - rotate selected object: `r, xyz for rotation axis, type degrees, alt will reset this stat to default value`
 - scale selected object: `s, xyz for direction, alt will reset this stat to default value` or `Object Properties > type in exact scale measurements`
   - for any of these operations, `shift + xyz` can be used to operate on all directions EXCEPT selected direction
-- add object: `shift + a`
+- add mesh: `shift + a`
 - search for Blender operation: `F3`
 - view clipping settings: `n`
 - select all: `a`
@@ -52,6 +53,7 @@
 - rendering process: `View Layer Properties > Denoising Data > Compositing > Check Use Nodes top left > Add Denoise Node > Noisy Image -> Image > Denoising Normal -> Normal > Denoising Albedo -> Albedo > Image -> Image > Render`
 - set units (metric, imperial): `Scene Properties > Units`
 - duplicate selection: `shift + d`
+- join multiple objects: `select objects > ctrl + j`
 
 ## Modeling
 ### Commands
@@ -73,12 +75,15 @@
 - show all hidden vertices: `alt + h`
 - get vertices and affected vertices to stick to mesh underneath while proportional editing: `enable snap on top` then `Snapping > face > Project Individual Elements`
 - extrude: `select > 1 vertex then e`
+  - extrusion can be cancelled with `right click` then `g,s,r` can be used to grab, scale(face inset), and rotate respectively
 - extrude selected to where cursor is: `ctrl + right click`
 - make overlay hug underlying structure better: `solidifier modifier > Crease > Inner > 1`
 - loop cut: `ctrl + r > scroll wheel for number of cuts > right click to cancel spatial movement` - creates evenly spaced vertex sets along the body of an object. Works well with proportional editing.
 - create face on selected vertices: `select vertices > f`
 - to subtract shapes from another shape:
+  1. make duplicate of object before applying boolean modifier
   1. add shape that will act as the subtractor
+  1. position/scale the subtractor
   1. select shape to keep
   1. modifer properties (wrench)
   1. add modifer
@@ -86,15 +91,11 @@
   1. click eye dropper
   1. select the subtractor
   1. operation > difference
-  1. adjust:
-    1. select subtractor
-    1. object properties (orange square)
-    1. viewport display
-    1. display as > wire (subtractor should now be in wire mode)
-    1. position/scale the subtractor
-    1. make duplicate of object before applying boolean modifier
-    1. apply boolean modifier
-    1. subtractor can be deleted
+  1. apply boolean modifier
+  1. subtractor can be deleted
+  1. clean up result
+    1. delete all faces that surround the cut
+    1. re-fill in the faces to eliminate n-gons
 - mirror: 
   1. select object to modify
   1. modifer properties (wrench) > add modifier > mirror
@@ -109,7 +110,7 @@
 - if beveling is not working properly, reset normals, scale x,y,z to 1.0, and rotation (object mode: `select object > ctrl + a > rotation and scale` edit mode: `F3 > recalculate normals`)
 - circle select: `c`
 - check normals: `overlays > face orientation` - red means face is facing the wrong way.
-  - Fix: `select all > shift + n`
+  - Fix normals: `select all > shift + n`
   - manually flip face: `ctrl + shift + n`
 - delete edge on a face: `select edge > x > dissolve edges` or `delete edge` - can change on whether the edge was created by a loop cut or not
 - merge/combine vertices to eliminate triangle/big vertex joints, `select vertices > alt + m > at last/first` or `snapping > vertex > press ctrl while grabbing vertex to snap to nearest vertex` (will not work if proportional editing is on)
@@ -118,8 +119,19 @@
 ![](./images/2.JPG)
 - align selected vertices on axis: `select all vertices > s > xyz > 0` - usually needed after a bevel
 - shade smooth force ignore edges: `shade smooth > object data properties (green triangle) > normals > auto smooth` - will not try to smooth edges that include an angle that exceeds the magnitude of the 'Angle' setting
+- crease: `shift + e`
+- join 2 vertices with edges and vertices: `select 2 vertices with vertex gap between them > j`
+
+### Reference Image
+- load reference image: `shift + a > image > reference`
 
 ### Technique
+#### Mirror Modifier
+- if using a subdivision surface modifier make sure mirror modifier is above the subdivision surface modifier 
+- make a loop cut down the center of the object in which you want to mirror
+- delete 1/2 of mesh
+- turn on Clipping in the mirror settings so that 2 halves are joined
+
 #### Subdivision Surface Modifier
 - always use the subdivision surface modifier over beveling for curved edges
   - the the subdivision surface modifier will average the shape/look of the mesh between all vertices of the mesh
@@ -131,14 +143,12 @@
     ![](./images/0.JPG)
     ![](./images/1.JPG)
 
-#### Mirror Modifier
-- if using a subdivision surface modifier make sure mirror modifier is above the subdivision surface modifier 
-- make a loop cut down the center of the object in which you want to mirror
-- delete 1/2 of mesh
-- turn on Clipping in the mirror settings so that 2 halves are joined
-
 #### Solidify Modifier
-- should go after mirror modifier
+- should go after mirror and subdivision surface modifiers
+- offset:
+  - `-1`: thickness will be applied to the inside of the mesh
+  - `0`: thickness will be applied evenly to both sides of the mesh
+  - `1`: thickness will be applied to the outside of the mesh
 
 ## Sculpting
 - select item and apply the subdivision modifier
@@ -154,8 +164,10 @@
 - The mesh characteristics segments, rings, and vertices can only be modified during the initial mesh creation. Once the object is deselcted, the menu will disappear and the characteristics will be permanent. 
 - Modifiers work top to bottom.
 - Modifiers can be enabled/disabled in different modes from the modifyer menu.
+- If viewport shading solid mode becomes noisy and hard to view, increase the clip start in the view options.
+- For cutting screw holes, put a square around the screw hole before cutting. Will help eliminate edge glitches from the subdivision surface modifier.
 
-## [Tutorial](https://www.youtube.com/playlist?list=PLjEaoINr3zgEq0u2MzVgAaHEBt--xLB6U)
+## Tutorials
 Amazing beginner Blender tutorial by [*Blender Guru*](https://www.youtube.com/channel/UCOKHwx1VCdgnxwbjyb9Iu1g) can be found [here](https://www.youtube.com/playlist?list=PLjEaoINr3zgEq0u2MzVgAaHEBt--xLB6U).
 
 Blender modeling tutorial by [*Blender Guru*](https://www.youtube.com/channel/UCOKHwx1VCdgnxwbjyb9Iu1g) can be found [here](https://www.youtube.com/watch?v=Hf2esGA7vCc&list=PLjEaoINr3zgEL9UjPTLWQhLFAK7wVaRMR).
