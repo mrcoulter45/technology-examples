@@ -71,7 +71,7 @@
 - to increase vertices on a mesh: `select all vertices > right click > subdivide` - subdivide menu will then appear
 - select single row or column of vertices: `alt + left click`
 - invert selected vertices: `ctrl + i`
-- hide selcted vertices: `h` - usefullness is that hidden vertices will not be affected by proportional editing. 
+- hide selcted vertices: `h` - usefullness is that hidden vertices will not be affected by proportional editing.
 - show all hidden vertices: `alt + h`
 - get vertices and affected vertices to stick to mesh underneath while proportional editing: `enable snap on top` then `Snapping > face > Project Individual Elements`
 - extrude: `select > 1 vertex then e`
@@ -96,7 +96,7 @@
   1. clean up result
     1. delete all faces that surround the cut
     1. re-fill in the faces to eliminate n-gons
-- mirror: 
+- mirror:
   1. select object to modify
   1. modifer properties (wrench) > add modifier > mirror
   1. select correct axis in mirror modifier
@@ -127,7 +127,7 @@
 
 ### Technique
 #### Mirror Modifier
-- if using a subdivision surface modifier make sure mirror modifier is above the subdivision surface modifier 
+- if using a subdivision surface modifier make sure mirror modifier is above the subdivision surface modifier
 - make a loop cut down the center of the object in which you want to mirror
 - delete 1/2 of mesh
 - turn on Clipping in the mirror settings so that 2 halves are joined
@@ -139,7 +139,7 @@
   - viewport quality can be increased to show the curvature in better detail
   - make edges sharper by adding loop cuts and dragging them very close to the edges in question
   - to fix rounded edges going around a corner, select edges except 2 edge vertices and `gg` to edge drag and merge
-    - in essence, you want only 2 flows of rectangles instead of 3
+    - in essence, you want only 2 flows of rectangles instead of 3<br/>
     ![](./images/0.JPG)
     ![](./images/1.JPG)
 
@@ -154,14 +154,14 @@
 - select item and apply the subdivision modifier
 - change brush size: `f`
 - change brush strength: `shift + f`
-- pull mesh out: `left click + drag` 
-- push mesh in: `ctrl + left click + drag` 
+- pull mesh out: `left click + drag`
+- push mesh in: `ctrl + left click + drag`
 
 ## Materials
 - color, roughness
 
 ## Notes
-- The mesh characteristics segments, rings, and vertices can only be modified during the initial mesh creation. Once the object is deselcted, the menu will disappear and the characteristics will be permanent. 
+- The mesh characteristics segments, rings, and vertices can only be modified during the initial mesh creation. Once the object is deselcted, the menu will disappear and the characteristics will be permanent.
 - Modifiers work top to bottom.
 - Modifiers can be enabled/disabled in different modes from the modifyer menu.
 - If viewport shading solid mode becomes noisy and hard to view, increase the clip start in the view options.
