@@ -75,7 +75,7 @@ List the names of cluster’s Nodes:
 `kubectl get nodes`
 
 To run a bash shell in a specified Pod container:
-`kubectl exec -it <pod-name> -- /bin/bash`
+`kubectl exec -it <pod-name> -n <namespace> -- /bin/bash`
 
 Create a Kubernetes object:
 `kubectl apply -f <obj-file>`
@@ -88,6 +88,9 @@ Delete a Persistent Volume Claim:
 
 Delete an ingress:
 `kubectl delete ingress <ingress-name>`
+
+Delete all items in a namespace:
+`kubectl delete ns <namespace-name>`
 
 ## Terms
 - **Pod** - models an application-specific "logical host" and can contain different application containers which are relatively tightly coupled. It is a Kubernetes abstraction that represents a group of one or more application containers (such as Docker or rkt), and some shared resources for those containers. Those resources include:

@@ -65,6 +65,9 @@ Create Docker image from Dockerfile:
 `docker build -t <image_name> <dockerfile_path>`
 Eg. `docker build -t nginx_image .`
 
+Run an image in a container:
+`sudo docker run -it --name <container_name> <image_name>` // adding `--rm` will remove the container when it exits
+
 List all running/ran containers:
 `sudo docker ps -a`
 
@@ -76,9 +79,6 @@ Remove one or more containers:
 
 Remove one or more images:
 `docker rmi <IMAGE ID> ...`
-
-Run an image in a container:
-`sudo docker run -it --name <container_name> <image_name>` // adding `--rm` will remove the container when it exits
 
 Restart exited container:
 `sudo docker start -ai <container_name>`
