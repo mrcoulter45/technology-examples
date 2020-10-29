@@ -1,0 +1,8 @@
+C:/Users/Michael/Documents/technology-examples/SystemVerilog/3BitCounter/3BitCounter.v {1 {vlog -work work -stats=none C:/Users/Michael/Documents/technology-examples/SystemVerilog/3BitCounter/3BitCounter.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module counter3Bit
+
+Top level modules:
+	counter3Bit
+
+} {} {}}

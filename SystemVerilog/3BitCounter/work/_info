@@ -1,0 +1,57 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Modeltech_pe_edu_10.4a/examples
+vcounter3Bit
+Z0 !s110 1601281392
+!i10b 1
+!s100 <1h:EkV?3nBYIM4INd5@M0
+IAhnYhc52D6UE@P;58ARoe2
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dC:/Users/Michael/Documents/technology-examples/SystemVerilog/3BitCounter
+w1600992722
+8C:/Users/Michael/Documents/technology-examples/SystemVerilog/3BitCounter/3BitCounter.v
+FC:/Users/Michael/Documents/technology-examples/SystemVerilog/3BitCounter/3BitCounter.v
+L0 1
+Z3 OP;L;10.4a;61
+r1
+!s85 0
+31
+Z4 !s108 1601281392.000000
+!s107 C:/Users/Michael/Documents/technology-examples/SystemVerilog/3BitCounter/3BitCounter.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Michael/Documents/technology-examples/SystemVerilog/3BitCounter/3BitCounter.v|
+!s101 -O0
+!i113 1
+o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact -O0
+ncounter3@bit
+vcounter3BitTB
+DXx6 sv_std 3 std 0 22 WmjPaeP=7F5?QFXzJ>D[Q2
+R0
+!i10b 1
+!s100 8_Y1<TS@f0_l@J1Gc9oe?2
+Ini:oW3F]ebh<W[K8fPfN;1
+R1
+!s105 _3BitCounterTB_sv_unit
+S1
+R2
+w1601281388
+8C:/Users/Michael/Documents/technology-examples/SystemVerilog/3BitCounter/3BitCounterTB.sv
+FC:/Users/Michael/Documents/technology-examples/SystemVerilog/3BitCounter/3BitCounterTB.sv
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/Michael/Documents/technology-examples/SystemVerilog/3BitCounter/3BitCounterTB.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/Michael/Documents/technology-examples/SystemVerilog/3BitCounter/3BitCounterTB.sv|
+!s101 -O0
+!i113 1
+o-work work -sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact -O0
+ncounter3@bit@t@b
