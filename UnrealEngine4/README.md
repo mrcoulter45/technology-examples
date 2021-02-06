@@ -38,4 +38,4 @@
   - network relevancy - the idea that each Actor only has a limited FOV and data that is network relevant to them
   - steps need to be taken to accomplish this
 - Video 5
-  -
+  - ...
