@@ -35,6 +35,9 @@
   - show all git stashes: `git stash list` - returns a list of stash IDs
   - restore a git stash: `git stash apply <stash-id>`
     - Eg: `git stash apply stash@{0}`
+  - see the most recent stash: `git stash show -p`
+  - see an arbitrary stash: `git stash show -p stash@{1}`
+
 - show all past state of your git project directory: `git reflog`
   - reset to any state listed in the git reflog: `git reset --hard <reflog-sha>`
   - can be used to undo commits, go back to certain commits, undo rebases, etc.

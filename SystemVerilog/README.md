@@ -18,9 +18,11 @@ end
 - ellaboration -
 - memstr/memcpy -
 
-
+- logic
+- bit
 
 interface -
+
 coverage -
     covergroup -
     coverpoint -

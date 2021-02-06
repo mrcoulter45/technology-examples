@@ -23,3 +23,31 @@ Defining arrays:
 Generates:
   - generates may be used to generate always blocks
   - generate block cannot be used inside a always block, must be outside
+
+Defining a module with parameters:
+```
+module <module-name> #(<PARAM_0> = -1, <PARAM_1> = -1) (
+  input [PARAM_0-1:0] data,
+  input valid,
+  input [PARAM_1-1:0] user,
+  output error
+);
+  ...
+endmodule
+```
+
+Declaring a module with parameters:
+```
+<module-name> #(.PARAM_0 (PARAM_0), .PARAM_1(PARAM_1)) <module-instance-name> (
+  .data (data),
+  .valid (valid),
+  .user (user),
+  .error (error)
+);
+```
+
+Macros:
+```
+`define val 10
+var_a = `val + 40;
+```
