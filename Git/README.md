@@ -17,6 +17,11 @@
 - set editor: `git config --global core.editor "<command-to-open-editor>"`
   - commit messages, rebasing, etc. will be done in this editor
 - list current configurations: `git config --list`
+- have git remember credentials:
+  - `git config --global credential.helper store`
+  - type username
+  - type personal access token
+  - > git won’t ask you for creds after that
 - create an empty git repo in current folder: `git init`
 - download objects and refs from another repository: `git fetch <remote>`
 - add a remote alias to your local repository: `git remote add <remote-name> <remote-url>`
