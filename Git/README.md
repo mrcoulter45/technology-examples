@@ -1,15 +1,15 @@
 # Git
 
 ## Terms
-- Git: a program that allows us to keep track of changes to a project
-- Github: a website that uses Git to store repositories of code for the world to see
-- working directory: local files on your machine that you are working on, not necessarily on the repository
-- remote: an alias for the URL of a git repository
-- origin: default remote name given to the repository from which the git clone was performed
-- master: default name given to the first branch automatically created in the repository
-- HEAD: the alias for the most recent SHA1 ID of the branch that you are currently in
-- diverge: whenever your current branch has commits that origin/master doesn’t have and origin/master has commits that your current branch doesn’t have
-- fast-forward merge: the HEAD of the branch that accepted the rebase commits needs to catch up with the position of the newest feature branch commit, because of the fact that the commits from the feature branch got placed on top of the accepting branches HEAD, basically just moves HEAD to the newest commit
+- **Git**: a program that allows us to keep track of changes to a project
+- **Github**: a website that uses Git to store repositories of code for the world to see
+- **working directory**: local files on your machine that you are working on, not necessarily on the repository
+- **remote**: an alias for the URL of a git repository
+- **origin**: default remote name given to the repository from which the git clone was performed
+- **master**: default name given to the first branch automatically created in the repository
+- **HEAD**: the alias for the most recent SHA1 ID of the branch that you are currently in
+- **diverge**: whenever your current branch has commits that origin/master doesn’t have and origin/master has commits that your current branch doesn’t have
+- **fast-forward merge**: the HEAD of the branch that accepted the rebase commits needs to catch up with the position of the newest feature branch commit, because of the fact that the commits from the feature branch got placed on top of the accepting branches HEAD, basically just moves HEAD to the newest commit
 
 ## Commands
 - set account name: `git config --global user.name "<name>"`
