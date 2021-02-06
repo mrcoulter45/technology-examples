@@ -14,28 +14,28 @@
 - **ctrl + alt**: hover over a tool and hold these keys to get extended info on the tool
 
 ## Multiplayer
-Video 1
-- server is the master, determines all outcome of gameplay
-- two types of servers:
-- listen server: when someone is hosting a game, and also using a client to play the game as well
-- dedicated server: only hosts game
-- replication: making sure all game state is replicated on all client machines
-- play button dropdown has local multiplayer (can create a listen server or a dedicated server)
-Video 2
-- things you can do specifically on the host/different clients
-- you can limit certain Actor replication to server/client
-- you can limit certain Actor attribute/variable replication to server/client
-- clients should never modify replicated data, they need to notify the server to make the change
-- actions in blueprint with server/lightening bolt in top right corner means that action can only possibly be run on the server
-- actions in blueprint with monitor/lightening bolt in top right corner means that actions occurring after this will only be run on client
-- RepNotify -  allows clients to call a function on a replicated object’s state change (when streetlight changes state, the client should run an appropriate function to change the light color)
-Video 3
-- function replication - eg. an explosion - when the server triggers an explosion event, clients need to run a function to see the explosion
-- reliable - don’t check this box for cosmetics. Not the most important thing in the game, but you still probably won’t see any problems unless you have trash connection
-Video 4
-- concept/scenario of players joining game late/in progress, player needs to see the game in its “used” already-interacted-with state
-- it’s not important to send every actor in a game every piece of data that every Actor does in a world (two characters across a large map from each other with nothing in common/no dependencies)
-- network relevancy - the idea that each Actor only has a limited FOV and data that is network relevant to them
-- steps need to be taken to accomplish this
-Video 5
--
+- Video 1
+  - server is the master, determines all outcome of gameplay
+  - two types of servers:
+  - listen server: when someone is hosting a game, and also using a client to play the game as well
+  - dedicated server: only hosts game
+  - replication: making sure all game state is replicated on all client machines
+  - play button dropdown has local multiplayer (can create a listen server or a dedicated server)
+- Video 2
+  - things you can do specifically on the host/different clients
+  - you can limit certain Actor replication to server/client
+  - you can limit certain Actor attribute/variable replication to server/client
+  - clients should never modify replicated data, they need to notify the server to make the change
+  - actions in blueprint with server/lightening bolt in top right corner means that action can only possibly be run on the server
+  - actions in blueprint with monitor/lightening bolt in top right corner means that actions occurring after this will only be run on client
+  - RepNotify -  allows clients to call a function on a replicated object’s state change (when streetlight changes state, the client should run an appropriate function to change the light color)
+- Video 3
+  - function replication - eg. an explosion - when the server triggers an explosion event, clients need to run a function to see the explosion
+  - reliable - don’t check this box for cosmetics. Not the most important thing in the game, but you still probably won’t see any problems unless you have trash connection
+- Video 4
+  - concept/scenario of players joining game late/in progress, player needs to see the game in its “used” already-interacted-with state
+  - it’s not important to send every actor in a game every piece of data that every Actor does in a world (two characters across a large map from each other with nothing in common/no dependencies)
+  - network relevancy - the idea that each Actor only has a limited FOV and data that is network relevant to them
+  - steps need to be taken to accomplish this
+- Video 5
+  -
