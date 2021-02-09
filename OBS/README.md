@@ -1,7 +1,7 @@
 # OBS
 
 ## Recording Settings for 1080p/60FPS
-![](./images/output.PNG)
+![](./images/output0.PNG)
 ![](./images/video.PNG)
 ![](./images/advanced.PNG)
 
