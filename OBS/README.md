@@ -7,3 +7,7 @@
 
 ## Audio Settings
 ![](./images/audio.PNG)
+
+## Notes
+- run OBS in admin mode
+- only have 1 monitor connected to PC while recording
