@@ -5,6 +5,11 @@
 ![](./images/video.PNG)
 ![](./images/advanced.PNG)
 
+## Streaming Settings for 1080p/60FPS
+![](./images/output-streaming.PNG)
+![](./images/video-streaming.PNG)
+![](./images/advanced.PNG)
+
 ## Audio Settings
 ![](./images/audio.PNG)
 

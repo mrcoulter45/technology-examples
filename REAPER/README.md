@@ -96,3 +96,29 @@
 - adjust level between 2 points: `alt + shift + click and drag` - these two points can be created with time selections and `ctrl + shift`.
 - envelopes can be written in real time: `trim > automation mode > write > adjust fader in real time as track is playing` - make sure not to listen to the track back in write automation mode, as it will clobber your envelope work.
 - to listen to track and see fader move in real time: `trim > automation mode > read`
+
+## Video
+- FLV video is not supported, change video extension to AVI
+- show video: `view > video`
+- video fade plugin: `FX > video processor`
+  - add preset 'item fades affect video' to the video processor plugin
+- overlay text: `track FX > video processor > preset > overlay text`
+  - show text only at certain points: `overlay text FX menu > text alpha > show track envelope > set correct areas for text`
+  - show text with blank background: `ctrl + drag in a new track > right click item > force offline > make offline item correct length`
+- render: `file > render`
+  - format: `Video (ffmpeg/libav)`
+
+## Preferences
+- turn off auto-fading: `options > preferences > search for 'crossfade' > uncheck 'create automatic fade-in/fade-out for new items'`
+
+## Vocal Mixing
+
+### Compression
+- use the ReaComp FX
+
+### EQ
+
+### Reverb
+- use ReaVerbate
+- make a separate track for reverb and send the appropriate tracks to it
+- turn off the dry sound on the reverb track
