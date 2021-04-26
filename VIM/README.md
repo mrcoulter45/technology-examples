@@ -18,4 +18,3 @@ search:
 
 go to line #:
 :<line #>
-
