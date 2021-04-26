@@ -22,6 +22,7 @@
   - type username
   - type personal access token
   - > git won’t ask you for creds after that
+- to change the very last commit: `git commit --amend --author="John Doe <john@doe.org>"`
 - create an empty git repo in current folder: `git init`
 - download objects and refs from another repository: `git fetch <remote>`
 - add a remote alias to your local repository: `git remote add <remote-name> <remote-url>`
