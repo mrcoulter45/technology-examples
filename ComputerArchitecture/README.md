@@ -90,6 +90,10 @@ write back cache: writes to the cache do NOT also include writes to memory. Ther
 types of cache:
 how to determine cache features:
 
+Snooping:
+  - Write Update Snooping Coherence: Example: All writes are required to be broadcasted on the bus so that all cores can snoop, including the value. When core 0 with cache writes to block A, if core 1 with cache also contains block A, core 1 will snoop the bus as core 0 is performing the write, and will update its copy of block A so that core 1's cache does not contain invalid data and can still cache hit on reads to block A. In this way, values stored in cache are always the most up to date. (https://www.youtube.com/watch?v=rLmS02gsEAk)
+  - Write Invalidate Snooping Coherence: Example: All writes are required to be broadcasted on the bus so that all cores can snoop, not including the value. (https://www.youtube.com/watch?v=uLikXssApZk&t=18s)
+
 ### Pipelining
 symbol table: a key-value store of labels and corresponding addresses
 reservation station: storage location for an instruction awaiting operands before it can execute.

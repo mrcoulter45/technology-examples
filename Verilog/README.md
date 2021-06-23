@@ -12,6 +12,12 @@ Port Rules:
   inside of a module when declaring signals inputs or outputs:
     inputs leave as input - act as wires
     outputs can be wires or regs
+  If a module is instantiated like so using an (\*), this means that the port/signal names match.
+  ```
+  mult_add u_0 (
+    .* // matches all top level signals to ports of the same name
+  );
+  ```
 
 Using parameters to create constant in verilog - https://stackoverflow.com/questions/21246782/using-parameters-to-create-constant-in-verilog
   Eg. - `{{{DATA_WIDTH-1{1'b0}},{1'b1}}} // where DATA_WIDTH = 8 -> 8'b00000001`
@@ -58,3 +64,5 @@ var_a = `val + 40;
 
 for loop iterations with blocking statements inside of them will happen sequentially
 for loop iterations with non-blocking statements inside of them will happen in parallel
+
+Never mix blocking and non-blocking assignments in the same block, as this can create race conditions.

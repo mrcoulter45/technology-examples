@@ -22,13 +22,20 @@
   - type username
   - type personal access token
   - > git won’t ask you for creds after that
-- to change the very last commit: `git commit --amend --author="John Doe <john@doe.org>"`
+- to update or fix most recent commit (will open editor for commit message): `git commit --amend`
+  - with updated 1-line commit message: `git commit --amend -m "an updated commit message"`
+  - without modifying commit message: `git commit --amend --no-edit`
+  - to change author/email of most recent commit: `git commit --amend --author="John Doe <john@doe.org>"`
+  - the `git commit --amend` command follows staging edited files with `git add`
 - create an empty git repo in current folder: `git init`
 - download objects and refs from another repository: `git fetch <remote>`
 - add a remote alias to your local repository: `git remote add <remote-name> <remote-url>`
 - list remotes: `git remote -v`
 - reverse(undo) a commit in a seperate commit: `git revert <commit-sha>`
 - diff a specific commit: `git diff <commit-sha> -p`
+- see the diff of two commits: `git diff <commit1> <commit2>`
+- diff files in the staging area: `git diff --staged` or `git diff --cached`
+- see all commits that changed this file with diffs. Also shows who made each commit: `git log -p <filepath>`
 - add every file in directory: `git add .`
 - add all tracked files that have changed: `git add -u`
 - discard all changes you have made since last checkout: `git reset --hard HEAD`
@@ -36,7 +43,23 @@
 - create a new local branch from local changes: `git checkout -b <new-branch-name>`
 - checkout a remote branch that is not yet local: `git checkout -b <name-of-new-branch> <remote>/<existing-remote-branch-name>`
 - force delete a local branch: `git branch -D <branch-name>`
-- show all remote branches of the repo that you are in: `git branch -a`
+- show all remote branches of the repo that you are currently in: `git branch -a`
+  - output should look something like this:
+  ```
+  * master
+    remotes/origin/HEAD -> origin/master
+    remotes/origin/blkval
+    remotes/origin/develop
+    remotes/origin/feature/t-1538
+    remotes/origin/feature/t-1779
+    remotes/origin/feature/t-61
+    remotes/origin/feature/t-86
+    remotes/origin/feature/t-1237_a
+    remotes/origin/feature/t-2145
+    remotes/origin/feature/t-896
+  ...
+  ```
+  - to checkout one of these remote branches: `git checkout develop`
 - save all unstaged changes away and clean working directory to match the HEAD commit: `git stash`
   - show all git stashes: `git stash list` - returns a list of stash IDs
   - restore a git stash: `git stash apply <stash-id>`
