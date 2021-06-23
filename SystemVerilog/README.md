@@ -76,4 +76,4 @@ end
 ```
 
 ## Verification Academy Video
-- https://verificationacademy.com/sessions/systemverilog-primer-vhdl-engineers/video/646?play=1
+- https://verificationacademy.com/sessions/overview-and-welcome-introduction-to-the-uvm
