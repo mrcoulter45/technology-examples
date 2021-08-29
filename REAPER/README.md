@@ -101,12 +101,16 @@
 - FLV video is not supported, change video extension to AVI
 - show video: `view > video`
 - video fade plugin: `FX > video processor`
-  - add preset 'item fades affect video' to the video processor plugin
+  - add preset 'Basic helpers: item fades affect video' to the video processor plugin
 - overlay text: `track FX > video processor > preset > overlay text`
   - show text only at certain points: `overlay text FX menu > text alpha > show track envelope > set correct areas for text`
   - show text with blank background: `ctrl + drag in a new track > right click item > force offline > make offline item correct length`
 - render: `file > render`
-  - format: `Video (ffmpeg/libav)`
+  - primary output format:
+    - format: `Video (ffmpeg/libav)`
+    - format: `AVI` size: `1920 x 1080` framerate: `60 fps`
+    - video codec: `MJPEG`
+    - audio codec: `16 bit PCM`
 
 ## Preferences
 - turn off auto-fading: `options > preferences > search for 'crossfade' > uncheck 'create automatic fade-in/fade-out for new items'`
