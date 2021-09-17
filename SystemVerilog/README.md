@@ -60,6 +60,7 @@ var0 = |(var1.or()); // will OR reduce array/register array down to 1 bit
 ![](./images/class-interface-2.PNG)
 ![](./images/class-interface-3.PNG)
 ![](./images/class-interface-4.PNG)
+- virtual interface: can hold a reference to an interface
 
 ## Packages
 - Namespaces:
@@ -77,3 +78,23 @@ end
 
 ## Verification Academy Video
 - https://verificationacademy.com/sessions/overview-and-welcome-introduction-to-the-uvm
+
+## Notes
+- modu inst0 (.a, .b, .c); - will assign to a value with the same name in the module
+- you have vars and nets, registers are vars and wires are nets, but logic can be used for all. Logic is 4 state
+- use always_comb over always @(\*), always_comb will also run the combinational block even if a function includes variables not visable to the combinational block
+- static variables will hold the same value through the entire simulation
+- automatic variables can change values
+- function has to execute in 0 time, returns a value
+- task can execute in longer than 0 time (waits, suspends), tasks have connections, statements are sequential by default, begin/end not needed
+- j = i++; // assign i to j, then increment i
+- j = ++i; // increment i, then assign i to j
+
+fork join
+dynamic cast
+event
+functional coverage
+associative array
+queue
+class handle
+inside

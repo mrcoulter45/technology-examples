@@ -38,3 +38,6 @@ class DerivedClass(BaseClass):
         - In triple-quoted strings, unescaped newlines and quotes are allowed (and are retained), except that three unescaped quotes in a row terminate the string. (A "quote" is the character used to open the string, i.e. either ' or ".)
         - Unless an `r` or `R` prefix is present, escape sequences in strings are interpreted according to rules similar to those used by Standard C. The recognized escape sequences are:
         - Good practice: use double quotes around strings that are used for interpolation or that are natural language messages, and single quotes for small symbol-like strings
+- pdb - The Python Debugger: https://docs.python.org/3/library/pdb.html
+- Difference between __sizeof__() and getsizeof() method – Python: https://www.geeksforgeeks.org/difference-between-__sizeof__-and-getsizeof-method-python/
+- numpy.transpose: https://numpy.org/doc/stable/reference/generated/numpy.transpose.html
