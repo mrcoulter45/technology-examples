@@ -11,11 +11,11 @@
 - create soft link: `ln -s file1 link1`
   - Eg: `ln -s /projects/michael/ws0/web_app_project webapp`
 - echo user name: `whoami`
-  > `michael123`
+  `> michael123`
 - echo machine name: `hostname`
-  > `DESKTOP-123`
+  `> DESKTOP-123`
 - echo shell type: `echo $SHELL`
-  > `/bin/bash`
+  `> /bin/bash`
 
 ll
 
