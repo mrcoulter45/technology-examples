@@ -5,6 +5,9 @@ delete highlighted text:
 1. Use the Arrow keys to highlight the desired text. ...
 1. Once the text is highlighted, press the d key to delete the text.
 
+Move lines:
+TODO
+
 undo:
 u
 
