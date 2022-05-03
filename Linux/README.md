@@ -16,8 +16,16 @@
   > `DESKTOP-123`
 - echo shell type: `echo $SHELL`
   > `/bin/bash`
-
-ll
-
-pushd and popd
-
+- list all processes for a user: `ps -aef | grep <user-name>`
+- pushd and popd:
+  - push current dir to dir stack and switch to specified dir: `pushd [DIRECTORY]`
+  - view currect dir stack: `dirs -lv`
+    - Eg. outputs:
+    ```
+    0  /opt
+    1  /usr/local
+    2  /var/www
+    3  /home/linuxize
+    ```
+  - to switch to a dir in the stack: `pushd +2` -> go to `/var/www` (top to bottom) or `pushd -1` -> go to `/var/www` (bottom to top)
+  - to remove top dir from the dir stack and navigate to the next dir in the stack: `popd`
