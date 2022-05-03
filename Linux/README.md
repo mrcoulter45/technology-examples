@@ -2,7 +2,7 @@
 
 ## Commands
 - find specific file in directory structure: `find . -path "*<part/of/path/filename>*"`
-- find files that contain matching words: `grep -r "User defined signal " <path>`
+- find files that contain matching words: `grep -r "<text>" <path>`
   - grep ignore case, recursive, precede each matching line with a line number files with specific extension: `grep -inr --include \*.svh "<text>" <path>`
     - case insensative: `-i`
 - transfer files via ssh: `scp <file> <username(result of whoami)>@<login-machine-name(result of hostname)>:<path-to-file>`
