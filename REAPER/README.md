@@ -105,6 +105,8 @@
 - overlay text: `track FX > video processor > preset > overlay text`
   - show text only at certain points: `overlay text FX menu > text alpha > show track envelope > set correct areas for text`
   - show text with blank background: `ctrl + drag in a new track > right click item > force offline > make offline item correct length`
+  - making a lyric video: https://www.youtube.com/watch?v=mXP86rmS8YM
+- Dynamic Split and Ripple Editing: https://www.youtube.com/watch?v=Tinm5SSbqMY
 - render: `file > render`
   - primary output format:
     - format: `Video (ffmpeg/libav)`
