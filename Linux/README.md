@@ -29,3 +29,7 @@
     ```
   - to switch to a dir in the stack: `pushd +2` -> go to `/var/www` (top to bottom) or `pushd -1` -> go to `/var/www` (bottom to top)
   - to remove top dir from the dir stack and navigate to the next dir in the stack: `popd`
+- show all processes that are hosting on ports: `lsof`
+  - list process on specific port: `lsof -i :<port-num>`
+    - Eg: `lsof -i :80`
+  - search for specific strings: `lsof | grep -i <string>`
