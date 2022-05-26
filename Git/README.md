@@ -80,5 +80,5 @@ foo
 bar
 >>>>>>> cb1abc6bd98cfc84317f8aa95a7662815417802d
 ```
-  - top half is the branch you a merging into
-  - bottom half is from the commit that you are trying to merge in
+  - top half is from the branch you are merging into
+  - bottom half is from the commit that you are trying to merge

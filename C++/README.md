@@ -63,7 +63,7 @@ The "three pillars" of OOP are generally taken to be:
     class Pig : public Animal {
       public:
         void animalSound() {
-        cout << "The pig says: wee wee \n" ;
+        cout << "The pig says: oink oink \n" ;
       }
     };
 
