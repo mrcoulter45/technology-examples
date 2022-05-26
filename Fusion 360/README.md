@@ -34,6 +34,8 @@ Fusion 360 by Autodesk is the best 3D modeling software to use when it comes to 
   - `solid > create > loft`
 - fillet: to round/bevel edges
   - `solid > tools > fillet`
+- move
+  - `s` > move
 
 ## Mechanical Concepts
 - for objects that need to slide together, keep a separation distance of 0.25mm between them
@@ -51,3 +53,22 @@ Fusion 360 by Autodesk is the best 3D modeling software to use when it comes to 
 
 ## Export for 3D Printing
 - https://www.google.com/search?q=fusion+360+export+stl&rlz=1C1RXQR_enUS927US927&oq=fusion+360+export+stl&aqs=chrome..69i57j0i512l9.4290j0j4&sourceid=chrome&ie=UTF-8
+⬇⬇⬇
+- Right click the component, component group, or body in the model Browser tree (left panel).
+- Select Save As Mesh.
+- Select the Format that you would like to save. (Format > STL Binary)
+- Click OK.
+
+- Slic3r.exe is located at: C:\Program Files (x86)\Slic3r-1.3.0.64bit
+
+## Measure
+- solid > inspect > measure > selection filter > select face/edge/vertex > click on model 1st face/edge/vertex > click on model 2nd face/edge/vertex
+
+## Search
+- `s`
+
+## Change/Edit Radius of Cylinder
+- `s` > offset face
+
+## Extrude and Make Cut
+- extrude > operation > new component

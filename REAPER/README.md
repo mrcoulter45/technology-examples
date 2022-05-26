@@ -62,7 +62,7 @@
 - when sending audio from one track to another, turn off the original track's "Master Send" so that duplicate audio is not heard: `route > uncheck master send`
 - tracks can be sent to other tracks by dragging the track's routing button to another track (you should see a patch cable)
 - `alt + click route button`: toggles master send (green band on routing button should toggle)
-- it is better to have track effects all on a separate "buss" track. That way, you can have the original track and its effects on different tracks, and send them both to master.
+- it is better to have track effects all on a separate "bus" track. That way, you can have the original track and its effects on different tracks, and send them both to master.
 
 ## Commands
 - `s`: split an item at cursor
@@ -107,6 +107,10 @@
   - show text with blank background: `ctrl + drag in a new track > right click item > force offline > make offline item correct length`
   - making a lyric video: https://www.youtube.com/watch?v=mXP86rmS8YM
 - Dynamic Split and Ripple Editing: https://www.youtube.com/watch?v=Tinm5SSbqMY
+- Envelopes: right click item in track > take > take envelopes
+- separate audio from video:
+  - for the video track: right click actual video window > video item properties > ignore audio
+  - for the audio track: right click the single item in the track > glue items (item will now be converted to a .wav file)
 - render: `file > render`
   - primary output format:
     - format: `Video (ffmpeg/libav)`
