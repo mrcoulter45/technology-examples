@@ -60,3 +60,13 @@
 1. choose built in YouTube presets for 4k
 1. add to render queue
 1. render all
+
+## Caching
+- delete all clip cache: playback > delete render cache > all
+- to cache a clip: select clip > right click clip > render cache color output
+
+## Proxies
+- proxies greatly improve timeline video playback performance
+1. file > project settings > master settings > optimized media and render cache:
+![](./images/0.JPG)<br/>
+1. edit tab > right click media thumbnail in the left tool bar > generate proxy media
