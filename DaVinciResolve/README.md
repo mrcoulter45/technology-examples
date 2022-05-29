@@ -26,7 +26,11 @@
 - increase height of media items in edit tab: `shift + scroll`
 
 ## Text Overlay
-- effects library > toolbox > titles > choose and drag a text type onto the timeline > double click the text box in the timeline to bring up the text editor tool
+- effects library > toolbox > titles > choose and drag a text type onto the timeline into a different track from the video > double click the text box in the timeline to bring up the text editor tool
+
+## Image Overlay
+- drag image onto track above video
+- edit how image behaves in the inspector panel in the top right corner
 
 ## Video Transitions
 - effects library > video transitions > drag and drop transition types to media items in timeline
@@ -36,6 +40,7 @@
 - fairlight tab can be used for fine tuning audio
 - audio should be in the yellow maybe just touching the red
 - mono to stereo: right click clip > clip attributes > format > stereo > source channels both on channel 1
+- remove audio from video: select audio item in timeline (right click > uncheck "link clips" if needed) > backspace
 
 ## Keyframes (Envelopes)
 - place the playback head (main orange bar that you drag around) in the position you want to place a keyframe > add appropriate keyframe type from the box in the top right
