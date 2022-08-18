@@ -20,4 +20,4 @@ Eg. to make a triangle:
   Sorry, your browser does not support inline SVG.
 </svg>
 ```
-[w3schools](https://www.w3schools.com/graphics/svg_path.asp)
+[SVG Path w3schools](https://www.w3schools.com/graphics/svg_path.asp)
