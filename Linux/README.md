@@ -33,3 +33,11 @@
   - list process on specific port: `lsof -i :<port-num>`
     - Eg: `lsof -i :80`
   - search for specific strings: `lsof | grep -i <string>`
+- cron jobs:
+  - view crontab file for curreent user: `crontab -l`
+  - create/edit crontab file for current user: `crontab -e`
+  - in the crontab file, a job(s) can be specified to run at specific times, by min, hour, day of month, month, day of week, an `*` means "every"
+    - Eg.: `44 15 * * * echo "hello world" -> ~/crontest.txt` -> will echo "hello world" into ~/crontest.txt at 3:44pm every day
+  - run cron for different user: `crontab -u <username> ...`
+    - Eg.: `crontab -u <username> -e/-l`
+    - Eg. for root: `sudo crontab -e/-l`

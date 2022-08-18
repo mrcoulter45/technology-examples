@@ -66,3 +66,14 @@ Eg:
     <app-sizer [size]="fontSizePx" (sizeChange)="fontSizePx=$event"></app-sizer>
   </div>
 ```
+
+## Solved Bugs
+- was trying to pass an array of objects to a child component and the array of objects was being cast to a string. I wasn't using the proper data binding type when passing the array to the child component in the HTML
+  - I was doing this:
+  ```
+  <app-device-table view={{tab}} deviceTableHeading={{deviceTableHeading}} deviceTableColumnHeaders={{deviceTableColumnHeaders}} deviceTableData={{deviceTableData}}></app-device-table>
+  ```
+  when I should have been doing this:
+  ```
+  <app-device-table [view]="tab" [deviceTableHeading]="deviceTableHeading" [deviceTableColumnHeaders]="deviceTableColumnHeaders" [deviceTableData]="deviceTableData"></app-device-table>
+  ```
