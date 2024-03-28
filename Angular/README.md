@@ -77,3 +77,4 @@ Eg:
   ```
   <app-device-table [view]="tab" [deviceTableHeading]="deviceTableHeading" [deviceTableColumnHeaders]="deviceTableColumnHeaders" [deviceTableData]="deviceTableData"></app-device-table>
   ```
+- mat-expansion-panel form select values were not updating properly after creating form. Put a `this.cdr.detectChanges();` after creating the form.
