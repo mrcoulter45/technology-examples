@@ -41,3 +41,6 @@
   - run cron for different user: `crontab -u <username> ...`
     - Eg.: `crontab -u <username> -e/-l`
     - Eg. for root: `sudo crontab -e/-l`
+- Zip directory in terminal
+  - `zip -r output.zip <directory>`
+    - `-r` Recursively includes all files and subdirectories under the specified directory.
