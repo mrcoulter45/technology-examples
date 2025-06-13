@@ -2,7 +2,7 @@
 
 *PyCharm 2022.3.2*
 
-## Run script in debug mode
+### Run script in debug mode
 - open new project > drag python script into pycharm
 
 ### Add folders to PYTHONPATH
